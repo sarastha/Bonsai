@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- setting the charatcter encoding and compatible view for the webpage-->
+	<meta charset="utf-8">
+	<meta name="author" content="Baishali Maharjan, 22067695,np01cp4a220126 ">
+	<meta name="description" content="Homepage">
+	<meta name="keyword" content="HTML,CSS,JavaScript">
+	<script src="form.js"></script>
+
+	
+	
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+			padding: 0px;
+		}
+		html{
+			scroll-behavior: smooth;
+			scroll-snap-type: y mandatory;
+		}
+		.logo{
+			width:60%; 
+			display: flex; 
+			justify-content: center;
+			align-items: center;
+
+		}
+		.logo img{
+			width: 80%;
+			border: 3px solid white;
+			border-radius: 50px;
+
+		}
+		.navbar{
+			display: flex;
+			
+			position: absolute;
+			top:0;
+			cursor: pointer;
+			
+		}
+
+
+		.nav-list
+		{
+			width:65%;
+			display: flex;
+			
+			
+		}
+		.nav-list li{
+			list-style: none;
+			padding: 30px ;
+			font-size: 25px;
+			font-family: 'Poppons',sans-serif;
+			
+			width: 200px;
+
+			
+
+
+		}
+		.nav-list li a{
+			text-decoration: none;
+			color: white;
+			padding: 3px 5px;
+
+			}
+
+		.nav-list li a:hover,
+		.nav-list li a.active{
+			text-decoration: none;
+			background: #359383;
+			color: black;
+			border-radius: 40px;
+
+		}
+		
+
+		
+		
+		
+		
+		.background{
+			background: rgba(0,0,0,0.7) url('images/img.jpg');
+			background-size: cover;
+			background-blend-mode: normal;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.firstSection{
+			height: 700px;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+		}
+		.box-main{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: 50%;
+			margin: auto;
+			height: 100%;
+			
+		}
+		.firstHalf{
+			width: 80%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+		}
+		.info{
+			margin: auto;
+			font-size: 20px;
+			
+			padding: 20px;
+			text-align: center;
+		}
+		.secondHalf{
+			width: 30%;
+		}
+		.secondHalf img{
+			width:70%;
+			padding: 2px;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;}
+		.text-big{
+			font-size: 100px;
+			font-family:'Poppins',serif ;
+			color: white;
+
+		}
+		.text-small{
+			font-size: 25px;
+			
+			color: white;
+			text-align:center ;
+
+		}
+		.btn{
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			font-size: 18px;
+
+			cursor: pointer;
+		}
+		.btn-sm{
+			padding: 3px 5px;
+			vertical-align: middle;
+			border-radius: 9px;
+			padding-right: 20px;
+		}
+		.sectionRight{
+			height: 700px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			margin: auto;
+
+		}
+		.our{
+			width: 100%;
+			height: 200px;
+			
+			padding-top: 70px;
+			
+		}
+		.heading{
+			height: 200px;
+			padding-top: 20px;
+			font-family:'Poppins',serif  ;
+			font-size: 70px;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: overline;
+		}
+		.products{
+			height: 200px;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			
+		}
+		.products img{
+			height: 100px;
+			cursor: pointer;
+			width: 100%;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+
+			
+			
+			
+
+		}
+		
+
+		
+
+		}
+		.p1:hover{
+			width:30px;
+		}
+		.pleft{
+			width: 60%;
+			height: 300px;
+			display: flex;
+			float: left;
+
+		}
+		.pright{
+			display: flex;
+			width: 40%;
+			height: 500px;
+			float: right;
+		}
+		.table{
+			float: right;
+			margin-top: 100px;
+		}
+		.text-pbig{
+			font-size: 75px;
+			font-family:'Poppins',serif ;
+			color: white;
+			margin-top: 200px;
+			margin-right: 30px;
+		}
+
+		}
+		.text-psmall{
+			font-size: 25px;
+			font-family:sans-serif ;
+			color: white;
+			margin-top: 300px;
+		}
+		
+		
+
+		
+		}
+		
+		#service{
+			width: 100%;
+			padding: 70px 0;
+			background: #efefef;
+			
+
+		}
+		.phead{
+			height: 100px;
+			padding-top: 10px;
+			font-family:'Poppins',serif  ;
+			font-size: 40px;
+			color:#08140b ;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+		}
+		.pbox2{
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content:space-around ;
+			margin: auto;
+			height: 600px;
+			margin-top: 70px;
+		}
+		.p2{
+			flex-basis: 48%;
+			text-align: center;
+			border-radius: 7px;
+			margin-bottom: 20px;
+			color: #fff;
+			position: relative;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+		}
+		.p2 img{
+			width: 100%;
+			border-radius: 7px;
+		}
+		.overlay{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			border-radius: 7px;
+			cursor: pointer;
+			background: linear-gradient(rgba(0,0,0,0),#74c483);
+			opacity: 0;
+			transition: 1s;
+
+		}
+		.p2:hover .overlay{
+			opacity: 0.5;
+
+
+		}
+		.des{
+			width: 80%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			opacity: 0;
+			transform:translateX(-50%) ;
+			transition: 1s;
+		}
+		hr{
+			background: #fff;
+			height: 2px;
+			border:0 ;
+			width: 60%;
+			margin: 15px auto;
+		}
+		.des p{
+			font-size: 20px;
+			color: black;
+
+		}
+		.p2:hover .des{
+			bottom: 40%;
+			opacity: 1;
+
+		}
+		.h3{
+			color: black;
+			font-size: 50px;
+		}
+		.blog{
+			height: 700px;
+			width: 100%;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+
+
+		}
+		.bbg{
+			background: rgba(0,0,0,0.7) url('images/blog.jpg');
+			background-size: cover;
+			background-blend-mode: normal;
+			background-attachment: fixed;
+			background-position: center;
+			
+		}
+		.blogbox{
+			display: flex;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			max-width: 50%;
+			margin: auto;
+			height: 100%;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			position: relative;
+		}
+
+
+		footer{
+    position: absolute;
+    background: #072b0c;
+    height: auto;
+   
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+    scroll-snap-align: start;
+			scroll-snap-stop: always;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-content h3{
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.footer-bottom{
+    background: #0b1f0e;
+     width: 1300px;
+    padding: 20px 0;
+    text-align: center;
+
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.sales{
+	text-align: center;
+	padding: 32px 0;
+	padding-bottom: 48px;
+	font-size: 56px;
+}
+.sales span{
+	background-color: aquamarine;
+	display: inline-block;
+	color: black;
+	clip-path: circle();
+	padding: 80px 48px;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  scroll-snap-align: start;
+			scroll-snap-stop: always;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  scroll-snap-align: start;
+			scroll-snap-stop: always;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+		
+
+
+
+		
+	</style>
+	
+	<title>Home page</title>
+</head>
+<body>
+	<!-- allocating divisions-->
+	<!--creating navbar-->
+
+		<nav class="navbar background" >
+			
+				<!--logooo-->
+				<ul class="nav-list">
+					<!--
+				<div class="logo"><img  src="images/img.png" alt="logo"></div>-->
+				<!-- nav items-->
+				<li><a href="home.html" class="active">Home</a></li>
+				<li><a href="Web/BLOGGG.html">Blog</a></li>
+				<li><a href="HTML BONSAI/Bonsai.html">Products</a></li>
+				<li><a href="Research/research.html">Research</a></li>
+				<li><a href="aboutus/AboutUs/Aboutus.html">AboutUs</a></li>
+			</ul>
+			</nav>
+			<!-- keeping background for 1st portion-->
+		<section class="background firstSection">		
+	    <div class="box-main">
+	    	<div class="firstHalf ">
+	    		
+	    		<p class="text-big">Bonsai</p>
+	    		<p class="text-small">is not you working on the tree;you have to have the tree work on you</p>
+	    		<div class="buttons">
+	    			<button class="btn"><a style="text-decoration: none" href="HTML BONSAI/Bonsai.html">Shop Now</a></button>
+
+	    		</div>
+	    	</div>
+	    	<!--div for keeping logo-->
+	    	<div class="secondHalf">
+	    		<img src="images/img.png" alt="Laptop image">
+	    	</div>
+	    </div></section>
+	    <!--informatuon section-->
+	    <section class="sectionRight">
+	    	<div class="para">
+	    <p class="info">E-commerce refers to any business that sells goods online. The buying and selling products online while sending funds and data to complete the transaction is known as E-commerce. E-commerce trends are continuing to expand and change at a tremendous rate as technology transforms how we conduct business. During pandemic E-commerce enterprises grew rapidly.Anyone may quickly set up an online business using easy-to-use tools and e-commerce platforms like Daraz, Forverng, and Amazon.
+	    	</p>
+	    	</div>
+	    <div class="thumbnail">
+	    	<img src="images/img.png" alt="laptop image" class="imgFluid">
+	    		    </div>
+	</div>
+	</section>
+	
+	<!--Limited offers portion-->
+		 <section id="service" class="service"> 
+		 	
+		 		<div class="phead">
+			<h1 class="sales">Limited <span>Offers</span></h1>
+		</div>
+		<!-- div for displaying the products-->
+		<div class="pbox2">
+			<div class="p2">
+				<div class="des">
+					<!--name of the product-->
+					<h3 class="h3">Tipudanthus</h3>
+					<hr>
+					<!--information-->
+					<p class="h3"> It can reach heights of 50 feet (15m) outdoors. Tupidanthus does best in bright, indirect light. Umbrella plants need good drainage so that excess moisture in the soil. It doesn’t require regular fertilizer, but for faster growth, you can use it once a month during summer.</p>
+					
+				</div>
+		 		<img src="images/11.jpg">
+		 		<!--making class for overlaying the informations-->
+		 		<div class="overlay"></div>
+		 		
+		 	</div>
+		 	<div class="p2">
+		 		<div class="des">
+		 			<!--name of the product-->
+					<h3 class="h3">Golden Gate Ficus</h3>
+					<hr>
+					<!--information-->
+					<p class="h3"> This beautiful Golden Gate ficus bonsai tree is actually not as difficult to take care of as one may think. Like many ficus bonsai trees, the Golden Gate Ficus Bonsai Tree or Taiwan Ficus Bonsai Tree can be kept both indoors and outdoors, and is also one of the most hardy species.</p>
+				</div>
+		 		<img src="images/3.jpg">
+		 		<!--making class for overlaying the informations-->
+		 		<div class="overlay"></div>
+		 	</div>
+		 	
+		 	
+		 </section>
+
+		 <section class="blog bbg">
+		 	
+		 	<div class="blogbox ">
+	    	<div class="firstHalf  fade">
+	    		<p class="text-big">Blog</p>
+	    		<p class="text-small">Bonsai are trees and plants grown in containers in such a way so that they look their most beautiful
+even prettier than those growing in the wild. Cultivating bonsai, therefore, is a very artistic hobby
+as well as a traditional Japanese art.</p>
+	    		<div class="buttons">
+	    			<button class="btn"><a style="text-decoration: none" href="Web/BLOGGG.html">Check Out</a></button>
+	    		</div>
+	    	
+
+  
+</div>
+
+
+	    	</div>
+		 </section>
+		 <section class="sectionRight">
+	    	<div class="para">
+	    		<h1 class="phead">About Us</h1>
+	    <p class="info">
+	    	We are a group of four who are currently studing at Islington College. Our members are Baishali Maharjan, Sara Shrestha, Sujal Nakarmi and Yuv Raj Bhattarai. We have worked really hard in this project and will give our level best in the upcomming projects too. Four individuals with different ideas coming together and presenting our thoughts and working together has made us a better person.</p>
+	    	</div>
+	    <div class="thumbnail">
+	    	<img src="images/about.jpg" alt="laptop image" class="imgFluid">
+	    		    </div>
+	</div>
+	</section>
+	<section>
+		<!--form validation-->
+		<div class="form-popup" id="myForm">
+  <form  class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" value="send">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+  </form>
+</div>
+
+
+
+	</section>
+<!--section for footer-->
+<section>
+		     <footer>
+
+		     	<div class="footer-content">
+		     		<h3>Bonsai Bliss</h3>
+		     		<p>Creating your way through the darkness</p>
+		     		<hr>
+		     		<h1>CONTACT US</h1>
+		     		<p>9803947468</p>
+		     		<hr>
+		     		<h1>FOLLOW US</h1>
+		     		<div style="display: flex;">
+		     			<img style="width: 30px; height: 30px;"src="images/fb.png">
+		     			<img style="width: 60px; height: 30px;"src="images/insta.png">
+		     			
+		     		</div>
+		     	</div>
+		     	<div class="footer-bottom">
+		     		<p>copyright &copy; 2023;Bonsai Bliss. Designed by <span>Team 3</span></p>
+		     	</div>
+		     </footer>
+
+</section>
+
+
+		 </div>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+width:60%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.logo img{
+width: 50px;
+height: 50px;
+border: 3px solid white;
+border-radius: 50px;
+
+}
+.navbar{
+display: flex;
+
+
+position: absolute;
+top:0;
+cursor: pointer;
+}
+
+
+.nav-list
+{
+width:75%;
+display: flex;
+
+}
+
+.nav-list li{
+list-style: none;
+padding: 10px 5px;
+font-size: 20px;
+font-family: 'Poppons',sans-serif;
+width: 300px;
+
+
+}
+.nav-list li a{
+text-decoration: none;
+color: white;
+padding: 3px 5px;
+
+}
+.nav-list li a:hover,
+.nav-list li a.active
+{
+text-decoration: none;
+background: #359383;
+color: black;
+border-radius: 40px;
+
+}
+
+
+
+
+
+
+
+
+.background{
+background: rgba(0,0,0,0.7) url('../images/header.jpg');
+background-size: cover;
+background-blend-mode: normal;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+}
+.firstSection{
+height: 700px;
+
+}
+.box-main{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 50%;
+margin: auto;
+height: 100%;
+
+}
+.firstHalf{
+width: 80%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.info{
+margin: auto;
+font-size: 20px;
+font-family: sans-serif;
+padding: 20px;
+}
+.secondHalf{
+width: 30%;
+}
+.secondHalf img{
+width:70%;
+padding: 2px;
+border: 4px solid white;
+border-radius: 150px;    /*Styling the corner of the box with a curve shape*/
+display: block;
+margin: auto;}
+.text-big{
+font-size: 100px;
+font-family:'Poppins',serif ;
+color: white;
+
+}
+.text-small{
+font-size: 25px;
+font-family:sans-serif ;
+color: white;
+
+}
+.btn{
+padding: 8px 20px;
+margin: 7px 0;
+border: 2px solid white;
+border-radius: 8px;
+font-size: 18px;
+
+cursor: pointer;
+}
+.btn-sm{
+padding: 3px 5px;
+vertical-align: middle;
+border-radius: 9px;
+padding-right: 20px;
+}
+
+
+.title{
+background-color: white;
+text-align: center;
+margin-top: 80px;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+.title h1{
+  font-family: 'Allura', cursive;
+}
+
+.comparison_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.page {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.page img {
+  width: 590px;
+  height: 300px;
+}
+.page p {
+  font-family: Roboto,sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.description {
+  background-color: #359383;
+  padding: 20px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.description p {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+footer{
+  position: absolute;
+  background: #072b0c;
+  height: auto;
+  
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: white;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  }
+  .footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+  }
+  .footer-content h3{
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+  }
+  .footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  }
+  .footer-bottom{
+  background: #0b1f0e;
+  width: 1300px;
+  padding: 20px 0;
+  text-align: center;
+  
+  }
+  .footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: white;
+  }
+  .footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+  }
+  hr{
+    background: #fff;
+    height: 2px;
+    border:0 ;
+    width: 60%;
+    margin: 15px auto;
+    }
+
+@media screen and (max-width: 800px){
+  .logo{
+    width:60%;
+  }
+
+  .nav-list{
+    width:70%;
+  }
+
+  .title h1{
+    font-size: 30px;
+  }
+
+  .page {
+    width: 90%;
+  }
+  .page img {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 424px){
+  .logo{
+    width:70%;
+  }
+
+  .nav-list{
+    width:80%;
+  }
+
+  .nav-list li{
+    font-size: 16px;
+  }
+
+  .title h1{
+    font-size: 20px;
+  }
+
+  .page img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+
+

@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #2c6d4e;
+  overflow-x: hidden;
+}
+.logo{
+width:60%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.logo img{
+width: 50px;
+height: 50px;
+border: 3px solid white;
+border-radius: 50px;
+
+}
+.navbar{
+display: flex;
+
+
+position: absolute;
+top:0;
+cursor: pointer;
+}
+
+
+.nav-list
+{
+width:75%;
+display: flex;
+
+}
+
+.nav-list li{
+list-style: none;
+padding: 10px 5px;
+font-size: 20px;
+font-family: 'Poppons',sans-serif;
+width: 300px;
+padding-left: 110px;
+
+
+}
+.nav-list li a{
+text-decoration: none;
+color: white;
+padding: 3px 5px;
+
+}
+.nav-list li a:hover,
+.nav-list li a.active
+{
+text-decoration: none;
+background: #359383;
+color: black;
+border-radius: 40px;
+
+}
+
+
+.CV {
+  margin-top: 60px;
+  text-align: center;
+  height: 700px;
+}
+
+.CV h1 {
+  font-family: 'Allura', cursive;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.team_bliss{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team_bliss .team_member{
+  width: 250px;
+  margin: 5px;
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.team_bliss .team_member .member_img{
+  background: #e9e5fa;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.team_bliss .team_member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.team_bliss .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.team_bliss .team_member span{
+  font-size: 12px;
+}
+
+.team_bliss .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.team_bliss .team_member .view_more_btn a{
+  display: block;
+  background: #5558c9;
+  color: #fff;
+  padding: 10px 15px;
+  width: 125px;
+  margin: 10px auto;
+  border-radius: 3px;
+}
+
+.team_bliss .team_member .view_more_btn a:hover {
+  background: #7377ff;
+}
+.K{
+   font-size: 25px;
+   border-radius: 25px;
+   margin-top: 6px;
+   margin-left: 90px;
+
+}
+
+footer{
+  position: absolute;
+  background: #072b0c;
+  height: auto;
+  
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: white;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  }
+  .footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+  }
+  .footer-content h3{
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+  }
+  .footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  }
+  .footer-bottom{
+  background: #0b1f0e;
+  width: 1300px;
+  padding: 20px 0;
+  text-align: center;
+  
+  }
+  .footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: white;
+  }
+  .footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+  }
+  hr{
+    background: #fff;
+    height: 2px;
+    border:0 ;
+    width: 60%;
+    margin: 15px auto;
+    }
+    .form{
+padding-top: 60px;
+padding-left: 100px;
+border: 7px solid white;
+border-radius: 25px;
+padding-bottom: 60px;
+width: 480px;
+margin-left: auto;
+margin-right: auto;
+
+}
+.form h1{
+font-size: 3.5rem;
+color: white;
+}
+.submit{
+font-size: 30px;
+margin-left: 50px;
+margin-top: 15px;
+}
+.f{
+  height: 700px;
+}

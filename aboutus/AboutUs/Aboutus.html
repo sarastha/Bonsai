@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yuv Raj Bhattarai, 22067678,np01cp4a220103 ">
+  <meta name="description" content="Aboutus">
+  <meta name="keyword" content="HTML,CSS,JavaScript">
+  <title>About Us</title>
+  <!-- Link to the stylesheet -->
+  <link rel="stylesheet" href="style.css">
+    
+  <script type="text/javascript">
+    function formvalidation()
+     {
+    var fname=document.forms["MyForm"]["fname"].value;
+    var lname=document.forms["MyForm"]["lname"].value;
+    var Message=document.forms["MyForm"]["Message"].value;
+
+   if (fname==""||lname==""||Message=="") {
+           alert("Empty field found");
+          
+    }
+    else {
+      alert("Your form has been submitted")
+    }
+    }
+
+
+  </script> 
+    
+
+
+  
+</head>
+<body>
+   <!-- The navigation bar -->
+  <nav class="navbar background" >
+      
+        <!--logooo-->
+        <ul class="nav-list">
+          <!--
+        <div class="logo"><img  src="images/img.png" alt="logo"></div>-->
+        <!-- nav items-->
+        <li><a href="../../home.html">Home</a></li>
+        <li><a href="../../Web/BLOGGG.html">Blog</a></li>
+        <li><a href="../../HTML BONSAI/Bonsai.html">Products</a></li>
+        <li><a href="../../Research/research.html">Research</a></li>
+        <li><a href="../../aboutus/AboutUs/Aboutus.html" class="active">AboutUs</a></li>
+      </ul>
+      </nav>
+      <!-- The section for the team information -->
+  <div class="CV">
+    <h1>Team Bliss</h1>
+    <div class="team_bliss">
+        <div class="team_member">
+          <div class="member_img">
+             <img src="../img/baishali.jpg" alt="our_team">
+          </div>
+          <!-- The member's name -->
+          <h3>Baishali Maharjan</h3>
+          <!-- The member's email -->
+          <span>baishalima7@gmail.com</span>
+           <!-- The member's introduction -->
+          <p>My name is Baishali Maharjan. I am a Student at Islington college</p>
+          <!-- The button to view more information about the member -->
+          <div class="view_more_btn">
+              <a style="text-decoration: none" href="baishali.html">View More</a>
+            </div>
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="../img/sara.jpg" alt="our_team">
+          </div>
+          <h3>Sara Shrestha</h3>
+          <span>sarashestha527@gmail.com</span>
+          <p>My name is Sara Shrestha. I am a Student at Islington college</p>
+          <div class="view_more_btn">
+              <a style="text-decoration: none" href="sara.html">View More</a>
+            </div>
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="../img/sujal.jpg" alt="our_team">
+          </div>
+          <h3>Sujal Nakarmi</h3>
+          <span>nakarmisujal@gmail.com</span>
+          <p>My name is Sujal Nakarmi. I am a Student at Islington college.</p>
+          <div class="view_more_btn">
+              <a style="text-decoration: none" href="sujal.html">View More</a>
+            </div>
+          </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="../img/yuvraj.jpg" alt="our_team">
+          </div>
+          <h3>Yuv Raj Bhattarai</h3>
+          <span>imyuvi022@gmail.com</span>
+          <p>My name is Yuv Raj Bhattarai. I am a Student at Islington college.</p>
+          <div class="view_more_btn">
+              <a style="text-decoration: none" href="yuvraj.html">View More</a>
+            </div>
+      </div>  
+    </div>  
+  </div>
+
+  <section class="f">
+    <div class="form">
+        
+        <h1>Feedback Form</h1>
+       
+        <form name="MyForm" onsubmit="return formvalidation()">
+    <label>First Name:</label>
+    <input type="text" name="fname"><br><br>
+
+    <label>Last Name</label>
+    <input type="text" name="lname"><br><br>
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+
+        <label>Message</label>
+        <label> Message</label><br>
+        <textarea name="Message" rows="10" cols="40"></textarea><br>
+
+
+        <input class="K" type="submit" name="Submit"> 
+  </form>
+
+        </div>  
+      </section>
+ 
+  <section>
+    <!-- Footer section starts here -->
+        <footer>
+         <!-- Footer content -->
+        <div class="footer-content">
+        <h3>Bonsai Bliss</h3>
+        <p>Creating your way through the darkness</p>
+        <hr>
+        <h1>CONTACT US</h1>
+        <p>9803947468</p>
+        
+        <hr>
+        <h1>FOLLOW US</h1>
+        <div style="display: flex;">
+        <img style="width: 30px; height: 30px;"src="../img/fb.png">
+        <img style="width: 60px; height: 30px;"src="../img/insta.png">
+        
+        </div>
+        </div>
+        <!-- Footer copyright information -->
+        <div class="footer-bottom">
+        <p>copyright &copy; 2023;Bonsai Bliss. Designed by <span>Team 3</span></p>
+        </div>
+        </footer>
+        
+        </section>
+   
+</body>
+</html>

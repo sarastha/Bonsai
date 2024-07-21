@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #2c6d4e;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.previous{
+  background-color: #5558c9;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.previous[type="button"]:hover {
+  background-color: #7377ff;
+}
+
+.CV_wrapper{
+  display: flex;
+  width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 10px;
+}
+
+.CV_wrapper .CV_left{
+  width: 35%;
+  background: #08164d;
+}
+
+.CV_wrapper .CV_left .CV_image{
+  width: 100%;
+}
+
+.CV_wrapper .CV_left .CV_image img{
+  width: 100%;
+  display: block;
+}
+
+.CV_wrapper .CV_title{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+}
+
+.CV_wrapper .CV_left .CV_info{
+  color: #84838b;
+}
+
+.CV_wrapper .CV_left .CV_bottom{
+  padding: 20px 30px;
+}
+
+.CV_wrapper .CV_item{
+  padding: 20px 0;
+  border-bottom: 1px solid #0175b2;
+}
+
+.CV_wrapper  .CV_item:last-child{
+  border-bottom: 0;
+}
+
+.CV_wrapper .CV_left .CV_namerole{
+  display: none;
+}
+
+.CV_wrapper .CV_namerole .name{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+}
+
+.CV_wrapper .CV_left .CV_namerole .role{
+  color: #84838b;
+}
+
+.CV_wrapper .CV_left .CV_contact .CV_info:last-child{
+   margin-top: 10px;
+}
+
+.CV_wrapper .CV_left .CV_contact .CV_subtitle{
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.CV_wrapper .CV_right{
+  width: 65%;
+  padding: 20px 40px;
+  color: #26252d;
+}
+
+.CV_wrapper .CV_right .CV_namerole .name{
+  color: #26252d;
+  font-size: 32px;
+}
+
+.CV_wrapper .CV_right .CV_namerole .role{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.CV_wrapper .CV_right .CV_item .CV_title{
+  color: #26252d;
+}
+
+.CV_wrapper .CV_right .CV_data{
+  display: flex;
+}
+
+.CV_wrapper .CV_right .CV_data .year{
+  padding-right: 35px;
+  width: 115px;
+  position: relative;
+}
+
+.CV_wrapper .CV_right .CV_data .content{
+  padding-left: 35px;
+  margin-bottom: 20px;
+  width: calc(100% - 115px);
+}
+
+.CV_wrapper .CV_right .CV_data .year:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #26252d;
+  border-radius: 50%;
+}
+
+.CV_wrapper .CV_right .CV_data .year:after{
+  content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;
+}
+
+.CV_wrapper .CV_right .CV_data:last-child .year:after{
+  display: none;
+}
+
+.CV_wrapper .CV_right .CV_interests .CV_info{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.CV_wrapper .CV_right .CV_interests .interests .int_icon{
+  font-size: 38px;
+  color: #0175b2;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+  .CV_wrapper .CV_right .CV_namerole{
+    display: none;
+  }
+  .CV_wrapper .CV_left .CV_namerole{
+    display: block;
+  }
+  .CV_wrapper{
+    width: 95%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .CV_wrapper .CV_left,
+  .CV_wrapper .CV_right{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 424px){
+  .CV_wrapper .CV_right{
+    padding: 20px 30px;
+  }
+  .CV_wrapper .CV_right .CV_data{
+    flex-direction: column;
+  }
+  .CV_wrapper .CV_right .CV_data .year{
+    padding: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #0175b2;
+  }
+  .CV_wrapper .CV_right .CV_data .year:before,
+  .CV_wrapper .CV_right .CV_data .year:after{
+    display: none;
+  }
+  .CV_wrapper .CV_right .CV_data .content{
+    width: 100%;
+    padding: 0;
+  }
+  .CV_wrapper .CV_right .CV_interests .interests .int_icon{
+    font-size: 24px;
+  }
+}
+
+.int_icon img{
+  width: 50px;
+  height: 50px;}
